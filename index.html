@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8' />
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="navbar-brand" data-toggle="collapse" data-target=".menu">
+			<i class="navbar-brand fas fa-bars fa-fw"></i>
+		</div>
+		<div class="navbar-brand" data-toggle="collapse" data-target=".menu">CodeJam - Palette</div>
+	</nav>
+
+	<main class="content">
+		<div class="row">
+			<div class="col-md-12 col-lg-6">
+				<div class="tools-block menu collapse">
+					<div class="action dropdown-item" title="Press key P" data-value="paint"><i class="fas fa-fill"></i> Paint bucket</div>
+					
+					<div class=".choose-color dropdown-item"><i class="fas fa-crutch"></i> Choose color: <input type="color" class="color-picker btn"></div>
+
+					<div class="dropdown-divider"></div>
+
+					<div class="action dropdown-item" title="Press key M" data-value="move"><i class="fas fa-arrows-alt"></i> Move</div>
+					
+					<div class="action dropdown-item" title="Press key T" data-value="transform"><i class="fas fa-exchange-alt"></i> Transform</div>
+				</div>	
+
+				<div class="colors-block menu collapse">
+					<div><i class="current-color fas fa-circle"></i> Current color</div>
+					<div><i class="prev-color fas fa-circle"></i> Prev color</div>
+
+					<div class="dropdown-divider"></div>
+
+					<div class="red dropdown-item color" data-value="#e74c3c"><i class="fas fa-circle"></i> red</div>
+					<div class="blue dropdown-item color" data-value="#3498db"><i class="fas fa-circle"></i> blue</div>
+				</div>	
+		
+			</div>
+			<div class="col-md-12 col-lg-6">
+				<canvas class="canvas-holder">
+					update your browser
+				</canvas>
+			</div>
+		</div>
+	</main>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+	<script src="script.js"></script>
+</body>
+</html>
